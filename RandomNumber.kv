@@ -1,0 +1,32 @@
+<MyRoot>:
+    random_label: random_label
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            orientation: "horizontal"
+            Label:
+                text: "Made By: Nicklas Coplan"
+                font_size: 10
+                color: .25, 0, 0
+            
+            Label:
+                text: " "
+
+            Label:
+                text: " "
+
+        Label:
+            text: "Dice Simulator"
+            font_size: 30
+            color: 1, 0, 0
+
+        Label:
+            id: random_label
+            text: "_"
+            font_size: 30
+
+        Button:
+            text: "Roll Dice"
+            font_size: 20
+            on_press: root.generate_number()
+            color: 1, 0, 0
